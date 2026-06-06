@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaSkype } from "react-icons/fa6"; 
-import Logo from './assets/logo.png'
+import Logo from "../../assets/logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#EDF6F5] py-16 px-4">
+   <>
+   <footer className="bg-[#EDF6F5] py-16 px-4 mt-40">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         
        
@@ -55,7 +56,8 @@ function Footer() {
       <div className="container mx-auto mt-16 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
         Designed and Developed By <strong>Themefisher</strong> • Distributed by <strong>ThemeWagon</strong>
       </div>
-    </footer>
+    </footer> 
+   </>
   )
 }
 

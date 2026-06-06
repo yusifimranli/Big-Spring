@@ -1,29 +1,30 @@
 import React from 'react'
-import Logo from './assets/logo.png'
+import Logo from "../../assets/logo.png";
 import { FaBars } from "react-icons/fa6";
+import { Link } from 'react-router';
 function Header() {
   return (
     <>
-    <header class="p-4">
+          <header class="p-4">
 		<div class="container hidden sm:flex justify-between h-16 mx-auto">
 			<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
                 <img src={Logo} alt="" />
 			</a>
 			<ul class="items-stretch hidden space-x-3 lg:flex ">
 				<li class="flex">
-					<a rel="noopener noreferrer" href="#" class="flex font-medium items-center px-4 -mb-1  dark:text-[#0AA8A7] ">Home</a>
+					<Link to = {'/'} class="flex font-medium items-center px-4 -mb-1  dark:text-[#0AA8A7] ">Home</Link>
 				</li>
 				<li class="flex">
-					<a rel="noopener noreferrer" href="#" class="flex font-medium items-center px-4 -mb-1">Blog</a>
+					<Link to = {'/blog'}  class="flex font-medium items-center px-4 -mb-1">Blog</Link>
 				</li>
 				<li class="flex">
-					<a rel="noopener noreferrer" href="#" class="flex font-medium items-center px-4 -mb-1">Pricing</a>
+					<Link to = {'/pricing'}  class="flex font-medium items-center px-4 -mb-1">Pricing</Link>
 				</li>
 				<li class="flex">
-					<a rel="noopener noreferrer" href="#" class="flex font-medium items-center px-4 -mb-1">Contact</a>
+					<Link  to = {'/contact'} class="flex font-medium items-center px-4 -mb-1">Contact</Link>
 				</li>
 				<li class="flex">
-					<a rel="noopener noreferrer" href="#" class="flex font-medium items-center px-4 -mb-1">FAQ</a>
+					<Link to = {'/FAG'}  class="flex font-medium items-center px-4 -mb-1">FAQ</Link>
 				</li>
 			</ul>
 			<div class="items-center flex-shrink-0 hidden lg:flex">
